@@ -23,8 +23,10 @@ const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route exact path="andect/" element={<Home />} />
+      <Route exact path="/" element={<Navigate replace to="/andect/" />} />
+
+      <Route path="/andect/" element={<App />}>
+        <Route exact path="/andect/" element={<Home />} />
         <Route path="andect/test/" element={<Test />} />
         <Route path="andect/feedback/" element={<Feedback />} />
         <Route path="andect/contributor/" element={<Contributor />} />
