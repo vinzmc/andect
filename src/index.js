@@ -27,9 +27,9 @@ render(
 
       <Route path="/andect/" element={<App />}>
         <Route exact path="/andect/" element={<Home />} />
-        <Route path="andect/test/" element={<Test />} />
-        <Route path="andect/feedback/" element={<Feedback />} />
-        <Route path="andect/contributor/" element={<Contributor />} />
+        <Route path="test" element={<Test />} />
+        <Route path="feedback" element={<Feedback />} />
+        <Route path="contributor" element={<Contributor />} />
         <Route path="*" element={<Error404 />}></Route>
       </Route>
     </Routes>
