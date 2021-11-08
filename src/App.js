@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <nav className="container mx-auto p-2 flex items-center justify-between flex-wrap bg-white">
-        <Link to="/">
+        <Link to="/andect/">
           <button className="flex items-center flex-shrink-0 mr-10 active navbar-item align-middle">
             <img className="fill-current h-20 w-20 mr-1" src={logo} alt="ANDECT Logo"></img>
             <span className="font-semibold text-4xl tracking-tight">ANDECT</span>
@@ -19,16 +19,16 @@ export default function App() {
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-xl font-semibold lg:flex-grow">
-            <NavLink exact to="/" className={"block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle"}>
+            <NavLink exact to="/andect/" className={"block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle"}>
               Home
             </NavLink >
-            <NavLink to="/test" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
+            <NavLink to="/andect/test" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
               Test
             </NavLink >
-            <NavLink to="/feedback" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
+            <NavLink to="/andect/feedback" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
               Feedback
             </NavLink >
-            <NavLink to="/contributor" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 rounded align-middle">
+            <NavLink to="/andect/contributor" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 rounded align-middle">
               Contributor
             </NavLink >
           </div>
