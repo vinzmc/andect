@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <main className="flex flex-col h-full">
             {/* header */}
-            <div className="bg-gray-100">
+            <div className="bg-gray-100 h-52">
                 <div className="container content-center mx-auto p-2">
                     <div className="pl-6">
                         <p className="font-semibold text-3xl text-yellow-500 text-center pt-3">Deteksi Gangguan Kecemasan</p>
@@ -33,7 +33,7 @@ export default function Home() {
                     <div className="w-1/2 mx-auto">
                         {/* Card 1 */}
                         <div className="container content-center mx-auto p-6">
-                            <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex items-center space-x-4 hover:bg-gray-50 transition duration-500">
+                            <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex items-center space-x-4 transition hover:bg-gray-50 transform hover:scale-105 duration-500">
                                 <div className="flex-shrink-0 content-start">
                                     <img className="h-12 w-12 col fill-current text-black" src={question} alt="question logo" />
                                 </div>
@@ -47,7 +47,7 @@ export default function Home() {
                         </div>
                         {/* Card 2 */}
                         <div className="container content-center mx-auto p-6 flex flex-row-reverse">
-                            <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex space-x-4 w-full hover:bg-gray-50 transition duration-500">
+                            <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex space-x-4 w-full transition hover:bg-gray-50 transform hover:scale-105 duration-500">
                                 <div className="flex-shrink-0">
                                     <img className="h-12 w-12 col fill-current text-black" src={clock} alt="question logo" />
                                 </div>
@@ -60,8 +60,8 @@ export default function Home() {
                             </div>
                         </div>
                         {/* Card 3 */}
-                        <div className="container content-center mx-auto p-6">
-                            <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex items-center space-x-4 hover:bg-gray-50 transition duration-500">
+                        <div className="container content-center mx-auto p-6 ">
+                            <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex items-center space-x-4 transition hover:bg-gray-50 transform hover:scale-105 duration-500">
                                 <div className="flex-shrink-0">
                                     <img className="h-12 w-12 col fill-current text-black" src={list} alt="question logo" />
                                 </div>
@@ -81,11 +81,11 @@ export default function Home() {
             <div className="bg-gray-50 flex-1 flex">
                 <div className="container p-5 text-center m-auto flex-1">
                     <NavLink to="/andect/test">
-                        <button className="bg-yellow-300 p-3 font-semibold rounded-md m-2 transition transform duration-500 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400">
+                        <button className=" bg-yellow-300 p-3 font-semibold rounded-md m-2 transition duration-500 hover:bg-yellow-400">
                             Halaman Test
                         </button>
                     </NavLink>
-                    <p className="font-medium text-xl text-yellow-500">Test Sekarang!</p>
+                    <p className="animate-pulse font-medium text-xl text-yellow-500 ">Test Sekarang!</p>
                     <p className="text-gray-500 text-xs">Hanya 10 menit</p>
                 </div>
             </div>
