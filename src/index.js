@@ -15,7 +15,6 @@ import App from "./App";
 import Home from "./routes/home";
 import Error404 from "./routes/error404";
 import Test from "./routes/test";
-import Feedback from "./routes/feedback";
 import Contributor from "./routes/contributor";
 
 // Components
@@ -30,7 +29,6 @@ render(
       <Route path="/andect/" element={<App />}>
         <Route path="/andect/" element={<Home />} />
         <Route path="test" element={<Test />} />
-        <Route path="feedback" element={<Feedback />} />
         <Route path="contributor" element={<Contributor />} />
         <Route path="*" element={<Error404 />}></Route>
       </Route>

@@ -14,7 +14,7 @@ export default function Contributor() {
             <p className="font-semibold text-3xl text-yellow-500 text-center pt-3">Halaman Kontribusi</p>
             <p className="font-semibold text-l text-gray-400 text-center pb-3">Orang-orang yang berkontribusi langsung pada projek ini</p>
             <p className="text-gray-600 pt-1 pb-3 text-xl text-justify w-4/6 mx-auto">
-              Orang yang terdapat pada halaman ini adalah orang yang secara berkontribusi pada pengerjaan projek ini.
+              Orang yang terdapat pada halaman ini adalah orang-orang yang berkontribusi dalam pengerjaan projek ini.
             </p>
           </div>
         </div>

@@ -35,14 +35,11 @@ export default function Navbar() {
                     <NavLink to="/andect/test" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
                         Test
                     </NavLink >
-                    <NavLink to="/andect/feedback" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
-                        Feedback
-                    </NavLink >
                     <NavLink to="/andect/contributor" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 rounded align-middle">
                         Contributor
                     </NavLink >
                 </div>
-                
+
                 {/* GitHub Project Link */}
                 <div>
                     <a href="https://github.com/vinzmc/andect" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green-500 hover:bg-white mt-4 lg:mt-0">
