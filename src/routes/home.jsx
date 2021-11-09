@@ -1,5 +1,8 @@
 //dependency
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+//components
+import Footer from '../components/footer'
 
 //assets
 import question from '../assets/question.svg'
@@ -35,7 +38,9 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <div className="text-xl font-medium text-black">Apa itu gangguan kecemasan?</div>
-                                    <p className="text-gray-500 text-justify">Kecemasan merupakan kondisi mental dimana </p>
+                                    <p className="text-gray-500 text-justify">
+                                        Gangguan kecemasan umum adalah munculnya rasa cemas atau khawatir yang berlebihan dan tidak terkendali terhadap berbagai hal dan kondisi. Kondisi ini akan mengganggu aktivitas sehari-hari penderitanya.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +51,9 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <div className="text-xl font-medium text-black">Mengapa menggunakan ANDECT?</div>
-                                    <p className="text-gray-500 text-justify">ANDECT mudah untuk</p>
+                                    <p className="text-gray-500 text-justify">
+                                        ANDECT cepat dan mudah untuk digunakan, dengan menggunakan ANDECT, anda dapat melakukan test screening untuk mendeteksi potensi gangguan kecemasan yang mungkin anda miliki.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +64,9 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <div className="text-xl font-medium text-black">Bagaimana cara kerja ANDECT?</div>
-                                    <p className="text-gray-500 text-justify">ANDECT bekerja dengan cara mengolah jawaban dari test yang anda berikan kepada sistem, dimana jawaban tersebut diolah dengan algoritma forward chaining sehingga dapat memberikan hasil yang sesuai.</p>
+                                    <p className="text-gray-500 text-justify">
+                                        ANDECT bekerja dengan cara mengolah jawaban dari test yang anda berikan kepada sistem, dimana jawaban tersebut diolah dengan algoritma forward chaining sehingga dapat memberikan hasil yang sesuai.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -67,19 +76,17 @@ export default function Home() {
             {/* content 2 */}
             <div className="bg-gray-50 flex-1 flex">
                 <div className="container p-5 text-center m-auto flex-1">
-                    <button className="bg-yellow-300 p-3 font-semibold rounded-md m-2 transition transform duration-500 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400">Halaman Test</button>
-                    <p className="font-medium text-xl text-yellow-500">Test Sekarang</p>
-                    <p className="text-gray-500 text-xs">Hanya 10 menit!</p>
+                    <NavLink to="/andect/test">
+                        <button className="bg-yellow-300 p-3 font-semibold rounded-md m-2 transition transform duration-500 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400">
+                            Halaman Test
+                        </button>
+                    </NavLink>
+                    <p className="font-medium text-xl text-yellow-500">Test Sekarang!</p>
+                    <p className="text-gray-500 text-xs">Hanya 10 menit</p>
                 </div>
             </div>
             {/* footer */}
-            <div className="bg-gray-800 ">
-                <div className="container mx-auto p-2 flex">
-                    <div className="flex-auto text-gray-500 text-sm text-center">
-                        <NavLink  to="/andect/contributor"><p>Created by Maurice and Teams. <span>&copy;</span> 2021</p></NavLink>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </main>
     );
 }
