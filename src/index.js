@@ -14,9 +14,10 @@ import './index.css';
 //Routes
 import App from "./App";
 import Home from "./routes/home";
-import Error404 from "./routes/error404";
 import Test from "./routes/test";
+import Result from "./routes/result";
 import Contributor from "./routes/contributor";
+import Error404 from "./routes/error404";
 
 // Components
 import reportWebVitals from './reportWebVitals';
@@ -30,6 +31,7 @@ render(
       <Route path="/andect/" element={<App />}>
         <Route path="/andect/" element={<Home />} />
         <Route path="test" element={<Test />} />
+        <Route path="test/:params" element={<Result />} />
         <Route path="contributor" element={<Contributor />} />
         <Route path="*" element={<Error404 />}></Route>
       </Route>

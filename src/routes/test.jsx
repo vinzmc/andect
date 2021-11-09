@@ -1,6 +1,7 @@
 //dependency
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from "react-router-dom";
 
 //component
 import Footer from "../components/footer";
@@ -10,6 +11,7 @@ import Header from "../components/header";
 import { knowledge } from '../data/knowledge';
 
 export default function Test() {
+  const navigate = useNavigate();
   const heading = "Test Gangguan Kecemasan";
   const subHeading = "23 Pertanyaan";
   const contentHeading = "Anda diharapkan untuk menjawab dengan jujur sesuai dengan kondisi ataupun keadaan sesungguhnya yang anda alami saaat ini ketika menjawab pertanyaan didalam test ini.";
@@ -17,9 +19,24 @@ export default function Test() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
     const arr = Object.values(data);
-    console.log(arr);
+    var arrLength = arr.length;
+    if (arrLength < 23) {
+      return;
+    }
+
+    // olah data menjadi 1/0 (true/false) untuk parameter
+    for (var i = 0; i < arrLength; i++) {
+      if (arr[i].localeCompare("Ya") === 0) {
+        arr[i] = 1;
+      } else {
+        arr[i] = 0;
+      }
+    }
+    const params = arr.join('');
+
+    // redirect
+    navigate('/andect/test/' + params);
   };
-  console.log((errors));
 
   return (
     <main className="flex flex-col h-full">
