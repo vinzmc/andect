@@ -31,18 +31,18 @@ export default function Test() {
         {knowledge.soal.map((value, i) => {
           return (
             <div className="p-2 pl-24 pr-24 even:bg-gray-50" key={i}>
-              <div className="container mx-auto w-3/4">
-                <p className="text-xl font-bold text-gray-800 m-2 p-2">
+              <div className="container mx-auto lg:w-3/4">
+                <p className="lg:text-xl text-lg font-bold text-gray-800 m-2 p-2">
                   Pertanyaan {i + 1}/{knowledge.totalSoal}
                 </p>
                 <div className={`border-2 rounded shadow-sm p-4 m-2 hover:bg-blue-50 ${errors[value.id] ? "border-red-500" : ""}`}>
-                  <p className="text-lg font-semibold mb-1">{value.pertanyaan}</p>
+                  <p className="lg:text-lg text-sm font-semibold mb-1">{value.pertanyaan}</p>
                   {value.pilihan.map((pilihan, j) => {
                     return (
                       <div className="p-1" key={j}>
                         <label className="inline-flex items-center cursor-pointer">
                           <input className="cursor-pointer" {...register(value.id, { required: true })} type="radio" value={pilihan} />
-                          <span className="ml-2">{pilihan}</span>
+                          <span className="ml-2 lg:text-base text-sm">{pilihan}</span>
                         </label>
                       </div>
                     );
@@ -57,7 +57,7 @@ export default function Test() {
         <div className="p-2 pl-24 pr-24 flex-1 even:bg-gray-50">
           <div className="container mx-auto w-3/4">
             <div className="p-2 m-2">
-              <input className="p-2 rounded bg-green-500 active:bg-green-700 text-white font-semibold cursor-pointer" type="submit" value="Cek hasil test" />
+              <input className="p-2 rounded bg-green-500 hover:bg-green-600 active:bg-green-800 text-white font-semibold cursor-pointer" type="submit" value="Cek hasil test" />
             </div>
           </div>
         </div>
