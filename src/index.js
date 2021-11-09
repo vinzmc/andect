@@ -10,23 +10,25 @@ import {
 //css
 import './index.css';
 
-//component
+//Routes
 import App from "./App";
 import Home from "./routes/home";
 import Error404 from "./routes/error404";
 import Test from "./routes/test";
 import Feedback from "./routes/feedback";
 import Contributor from "./routes/contributor";
+
+// Components
 import reportWebVitals from './reportWebVitals';
 
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<Navigate replace to="/andect/" />} />
+      <Route path="/" element={<Navigate replace to="/andect/" />} />
 
       <Route path="/andect/" element={<App />}>
-        <Route exact path="/andect/" element={<Home />} />
+        <Route path="/andect/" element={<Home />} />
         <Route path="test" element={<Test />} />
         <Route path="feedback" element={<Feedback />} />
         <Route path="contributor" element={<Contributor />} />
@@ -36,6 +38,7 @@ render(
   </BrowserRouter>,
   rootElement
 );
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

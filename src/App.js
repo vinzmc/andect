@@ -14,6 +14,7 @@ export default function App() {
       </div>
       <hr />
       <div className="flex-1">
+        {/* Content Body */}
         <Outlet />
       </div>
     </div>

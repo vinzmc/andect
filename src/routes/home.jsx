@@ -31,6 +31,7 @@ export default function Home() {
             <div>
                 <div className="container content-center mx-auto">
                     <div className="w-1/2 mx-auto">
+                        {/* Card 1 */}
                         <div className="container content-center mx-auto p-6">
                             <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex items-center space-x-4 hover:bg-gray-50 transition duration-500">
                                 <div className="flex-shrink-0 content-start">
@@ -44,6 +45,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        {/* Card 2 */}
                         <div className="container content-center mx-auto p-6 flex flex-row-reverse">
                             <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex space-x-4 w-full hover:bg-gray-50 transition duration-500">
                                 <div className="flex-shrink-0">
@@ -57,6 +59,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        {/* Card 3 */}
                         <div className="container content-center mx-auto p-6">
                             <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex items-center space-x-4 hover:bg-gray-50 transition duration-500">
                                 <div className="flex-shrink-0">
@@ -73,6 +76,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            
             {/* content 2 */}
             <div className="bg-gray-50 flex-1 flex">
                 <div className="container p-5 text-center m-auto flex-1">
@@ -85,6 +89,7 @@ export default function Home() {
                     <p className="text-gray-500 text-xs">Hanya 10 menit</p>
                 </div>
             </div>
+
             {/* footer */}
             <Footer />
         </main>
