@@ -1,25 +1,21 @@
+//dependency
+import React from 'react';
+
 //assets
 import avatar from "../assets/avatar.webp";
 
 //component
 import Footer from "../components/footer";
+import Header from "../components/header";
 
 export default function Contributor() {
+  const heading = "Halaman Kontribusi";
+  const subHeading = "Orang-orang yang berkontribusi langsung pada projek ini";
+  const contentHeading = "Orang yang terdapat pada halaman ini adalah orang-orang yang berkontribusi dalam pengerjaan projek ini.";
+
   return (
     <main className="flex flex-col h-full">
-      {/* header */}
-      <div className="bg-gray-100 lg:h-52 h-80">
-        <div className="container content-center mx-auto p-2">
-          <div className="pl-6">
-            <p className="font-semibold text-3xl text-yellow-500 text-center pt-3">Halaman Kontribusi</p>
-            <p className="font-semibold text-l text-gray-400 text-center pb-3">Orang-orang yang berkontribusi langsung pada projek ini</p>
-            <p className="text-gray-600 pt-1 pb-3 text-xl text-justify w-4/6 mx-auto">
-              Orang yang terdapat pada halaman ini adalah orang-orang yang berkontribusi dalam pengerjaan projek ini.
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr />  {/* batas antara header dengan content*/}
+      <Header heading={heading} subHeading={subHeading} contentHeading={contentHeading}/>
 
       {/* konten 1 */}
       <div>

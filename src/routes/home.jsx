@@ -1,4 +1,5 @@
 //dependency
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 //components
@@ -8,24 +9,17 @@ import Footer from '../components/footer'
 import question from '../assets/question.svg'
 import clock from '../assets/clock.svg'
 import list from '../assets/list.svg'
+import Header from '../components/header';
 
 
 export default function Home() {
+    const heading = "Deteksi Gangguan Kecemasan";
+    const subHeading = "Deteksi berdasarkan serangkaian pertanyaan singkat";
+    const contentHeading = "Andect adalah sebuah sistem pakar yang berguna untuk mendeteksi gangguan kecemasan yang berpotensi dimiliki oleh anda berdasarkan serangkaian pertanyaan yang telah dikonsultasikan dengan para ahli.";
+
     return (
         <main className="flex flex-col h-full">
-            {/* header */}
-            <div className="bg-gray-100 lg:h-52 h-62">
-                <div className="container content-center mx-auto p-2">
-                    <div className="pl-6">
-                        <p className="font-semibold text-3xl text-yellow-500 text-center pt-3">Deteksi Gangguan Kecemasan</p>
-                        <p className="font-semibold text-l text-gray-400 text-center pb-3">Deteksi berdasarkan serangkaian pertanyaan singkat</p>
-                        <p className="text-gray-600 pt-1 pb-3 text-xl text-justify w-4/6 mx-auto">
-                            Andect adalah sebuah sistem pakar yang berguna untuk mendeteksi gangguan kecemasan yang berpotensi dimiliki oleh anda berdasarkan serangkaian pertanyaan yang telah dikonsultasikan dengan para ahli.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <hr />  {/* batas antara header dengan content*/}
+            <Header heading={heading} subHeading={subHeading} contentHeading={contentHeading}/>
 
             {/* content 1 */}
             <div>
