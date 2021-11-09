@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <main className="flex flex-col h-full">
             {/* header */}
-            <div className="bg-gray-100 h-52">
+            <div className="bg-gray-100 lg:h-52 h-62">
                 <div className="container content-center mx-auto p-2">
                     <div className="pl-6">
                         <p className="font-semibold text-3xl text-yellow-500 text-center pt-3">Deteksi Gangguan Kecemasan</p>
