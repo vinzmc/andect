@@ -5,7 +5,8 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Navigate // redirect
+  Navigate, // redirect
+  HashRouter
 } from "react-router-dom";
 
 //css
@@ -24,7 +25,7 @@ import reportWebVitals from './reportWebVitals';
 
 const rootElement = document.getElementById("root");
 render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<Navigate replace to="/andect/" />} />
 
@@ -36,7 +37,7 @@ render(
         <Route path="*" element={<Error404 />}></Route>
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   rootElement
 );
 
