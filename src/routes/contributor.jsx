@@ -10,7 +10,7 @@ import Header from "../components/header";
 
 export default function Contributor() {
   const heading = "Halaman Kontribusi";
-  const subHeading = "Orang-orang yang berkontribusi langsung pada projek ini";
+  const subHeading = "Orang-orang yang berkontribusi dalam projek";
   const contentHeading = "Orang yang terdapat pada halaman ini adalah orang-orang yang berkontribusi dalam pengerjaan projek ini.";
 
   return (
