@@ -24,7 +24,7 @@ export default function Home() {
             {/* content 1 */}
             <div>
                 <div className="container content-center mx-auto">
-                    <div className="w-1/2 mx-auto">
+                    <div className="lg:w-1/2 mx-auto">
                         {/* Card 1 */}
                         <div className="container content-center mx-auto p-6">
                             <div className="p-6 max-w-2xl bg-white rounded-xl shadow-md flex items-center space-x-4 transition hover:bg-gray-50 transform hover:scale-105 duration-500">
@@ -72,7 +72,7 @@ export default function Home() {
             </div>
 
             {/* content 2 */}
-            <div className="bg-gray-50 flex-1 flex">
+            <div className="bg-gray-50 flex flex-1">
                 <div className="container p-5 text-center m-auto flex-1">
                     <NavLink to="/andect/test">
                         <button className=" bg-yellow-300 p-3 font-semibold rounded-md m-2 transition duration-500 hover:bg-yellow-400">
