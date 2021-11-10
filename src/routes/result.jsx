@@ -17,7 +17,7 @@ export default function Result() {
 
     const heading = "Halaman Hasil Deteksi";
     const subHeading = "Hasil Test";
-    const contentHeading = "Hasil test ini merupakan hasil dari test skreening berdasarkan jawaban yang anda berikan pada test sebelumnya";
+    const contentHeading = "Hasil test ini merupakan hasil dari test screening berdasarkan jawaban yang anda berikan pada test sebelumnya";
 
     function saveHasil() {
         navigator.clipboard.writeText(window.location.href);
