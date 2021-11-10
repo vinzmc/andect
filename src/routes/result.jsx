@@ -20,7 +20,6 @@ export default function Result() {
 
     function saveHasil() {
         navigator.clipboard.writeText(window.location.href);
-        alert("Link berhasil dicopy!");
     }
 
     return (
@@ -52,9 +51,11 @@ export default function Result() {
                                 );
                             })}
                             <div className="text-right">
-                                <button className=" bg-green-400 p-2 pl-4 pr-4 mt-2 font-bold rounded-md transition duration-600 hover:bg-green-500 text-white" onClick={() => saveHasil()}>
+                                
+                                <button className=" bg-green-400 p-2 pl-4 pr-4 ml-4 mt-2 font-bold rounded-md transition duration-600 hover:bg-green-500 text-white" onClick={() => saveHasil()}>
                                     Save
                                 </button>
+                                <div className="text-xs text-gray-500">copy link to cipboard*</div>
                             </div>
                         </div>
                         <div className="lg:mb-10">
