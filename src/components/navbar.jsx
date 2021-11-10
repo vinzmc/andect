@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <nav className="container mx-auto p-2 flex items-center justify-between flex-wrap bg-white">
             {/* Website icon and name*/}
-            <NavLink to="/andect/">
+            <NavLink to="/">
                 <button className="flex items-center flex-shrink-0 mr-10 active navbar-item align-middle">
                     <img className="fill-current h-20 w-20 mr-1" src={logo} alt="ANDECT Logo"></img>
                     <span className="font-semibold text-4xl tracking-tight">ANDECT</span>
@@ -32,13 +32,13 @@ export default function Navbar() {
             {/* List of links */}
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-xl font-semibold lg:flex-grow">
-                    <NavLink to="/andect/" className={"block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle"}>
+                    <NavLink to="/" className={"block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle"}>
                         Home
                     </NavLink >
-                    <NavLink to="/andect/test" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
+                    <NavLink to="/test" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle">
                         Test
                     </NavLink >
-                    <NavLink to="/andect/contributor" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 rounded align-middle">
+                    <NavLink to="/contributor" className="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 rounded align-middle">
                         Contributor
                     </NavLink >
                 </div>

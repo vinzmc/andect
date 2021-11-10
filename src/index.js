@@ -2,10 +2,8 @@
 import React from 'react';
 import { render } from "react-dom";
 import {
-  BrowserRouter,
   Routes,
   Route,
-  Navigate, // redirect
   HashRouter
 } from "react-router-dom";
 
@@ -25,12 +23,11 @@ import reportWebVitals from './reportWebVitals';
 
 const rootElement = document.getElementById("root");
 render(
-  <HashRouter>
+  <HashRouter basename="/">
     <Routes>
-      <Route path="/" element={<Navigate replace to="/andect/" />} />
 
-      <Route path="/andect/" element={<App />}>
-        <Route path="/andect/" element={<Home />} />
+      <Route path="/" element={<App />}>
+        <Route path="/" element={<Home />} />
         <Route path="test" element={<Test />} />
         <Route path="test/:params" element={<Result />} />
         <Route path="contributor" element={<Contributor />} />

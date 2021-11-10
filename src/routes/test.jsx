@@ -35,7 +35,7 @@ export default function Test() {
     const params = arr.join('');
 
     // redirect
-    navigate('/andect/test/' + params);
+    navigate('/test/' + params);
   };
 
   return (
