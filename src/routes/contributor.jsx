@@ -90,7 +90,7 @@ export default function Contributor() {
             <div className="flex flex-col flex-1 m-2 p-6 items-center">
               <img className="h-40 w-40 object-cover rounded-full m-1 hover:scale-110 transform duration-300" src={avatar} alt="question logo" />
               <div className="text-lg font-medium text-black">
-                Arvendo Immanuel
+                Arvendo Manuel L
               </div>
               <p className="text-gray-500 text-center">
                 Team Member
