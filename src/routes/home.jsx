@@ -74,7 +74,7 @@ export default function Home() {
             {/* content 2 */}
             <div className="bg-gray-50 flex flex-1">
                 <div className="container p-5 text-center m-auto flex-1">
-                    <NavLink to="/andect/test">
+                    <NavLink to="/test">
                         <button className=" bg-yellow-300 p-3 font-semibold rounded-md m-2 transition duration-500 hover:bg-yellow-400">
                             Halaman Test
                         </button>
