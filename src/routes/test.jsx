@@ -14,7 +14,7 @@ export default function Test() {
   const navigate = useNavigate();
   const heading = "Test Gangguan Kecemasan";
   const subHeading = "23 Pertanyaan";
-  const contentHeading = "Anda diharapkan untuk menjawab dengan jujur sesuai dengan kondisi ataupun keadaan sesungguhnya yang anda alami saat ini ketika menjawab pertanyaan didalam test ini.";
+  const contentHeading = "Ketika menjawab pertanyaan didalam test, Anda diharapkan untuk menjawab dengan jujur sesuai dengan kondisi ataupun keadaan sesungguhnya yang anda alami saat ini.";
 
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
