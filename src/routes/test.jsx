@@ -47,13 +47,13 @@ export default function Test() {
         {/* Daftar Pertanyaan */}
         {knowledge.soal.map((value, i) => {
           return (
-            <div className="p-2 pl-24 pr-24 even:bg-gray-50" key={i}>
+            <div className="p-2 lg:pl-24 lg:pr-24 even:bg-gray-50" key={i}>
               <div className="container mx-auto lg:w-3/4">
                 <p className="lg:text-xl text-lg font-bold text-gray-800 m-2 p-2">
-                  Pertanyaan {i + 1}/{knowledge.totalSoal}
+                  #Pertanyaan {i + 1}/{knowledge.totalSoal}
                 </p>
                 <div className={`border-2 rounded shadow-sm p-4 m-2 hover:bg-blue-50 ${errors[value.id] ? "border-red-500" : ""}`}>
-                  <p className="lg:text-lg text-sm font-semibold mb-1">{value.pertanyaan}</p>
+                  <p className="lg:text-lg text-sm font-semibold mb-1 text-justify">{value.pertanyaan}</p>
                   {value.pilihan.map((pilihan, j) => {
                     return (
                       <div className="p-1" key={j}>
