@@ -55,7 +55,7 @@ export default function rulesResult(arr) {
         if (arr[i++] === '1' && arr[i++] === '1' && arr[i++] === '1' && arr[i++] === '1') {
             if (result.find(element => element === hasil[4])) {
                 //do nothing (sudah mencakup 2 2nya)
-            } else if (arr.find(element => element === hasil[5])) {
+            } else if (result.find(element => element === hasil[5])) {
                 //ubah menjadi agoraphobia dan panik
                 result[result.length - 1] = hasil[4];
             } else {

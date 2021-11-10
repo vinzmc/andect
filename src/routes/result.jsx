@@ -1,6 +1,6 @@
 //dependency
-import React from 'react';
-import { useParams } from 'react-router';
+import React, { useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router';
 
 //component
 import Footer from '../components/footer';
@@ -11,6 +11,7 @@ import rulesResult from '../data/rules'
 
 export default function Result() {
     const { params } = useParams();
+    const navigate = useNavigate();
     const result = rulesResult(params);
     const linkGForm = 'https://docs.google.com/forms/d/e/1FAIpQLSdNYbBHHLo7FLqu_x6YcT05-DopsjynsGp-xKSZ7Zv4si-qQw/viewform';
 
@@ -21,6 +22,12 @@ export default function Result() {
     function saveHasil() {
         navigator.clipboard.writeText(window.location.href);
     }
+
+    useEffect(() => {
+        if (params.length < 23) {
+            navigate('/');
+        }
+    }, [navigate, params.length]);
 
     return (
         <main className="flex flex-col h-full">
@@ -51,7 +58,7 @@ export default function Result() {
                                 );
                             })}
                             <div className="text-right">
-                                
+
                                 <button className=" bg-green-400 p-2 pl-4 pr-4 ml-4 mt-2 font-bold rounded-md transition duration-600 hover:bg-green-500 text-white" onClick={() => saveHasil()}>
                                     Save
                                 </button>
