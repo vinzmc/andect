@@ -55,7 +55,7 @@ export default function Result() {
                                 <button className=" bg-green-400 p-2 pl-4 pr-4 ml-4 mt-2 font-bold rounded-md transition duration-600 hover:bg-green-500 text-white" onClick={() => saveHasil()}>
                                     Save
                                 </button>
-                                <div className="text-xs text-gray-500">copy link to cipboard*</div>
+                                <div className="text-xs text-gray-500 pr-2">copy link to clipboard*</div>
                             </div>
                         </div>
                         <div className="lg:mb-10">
@@ -63,7 +63,7 @@ export default function Result() {
                                 Apa yang bisa anda lakukan dengan hasil ini?
                             </div>
                             <div className="text-justify text-gray-500 lg:text-xl">
-                                Hasil dari test ini merupakan hasil test skreening yang bertujuan untuk mendeteksi potensi adanya gangguan kecemasan yang mungkin dimiliki oleh seseorang, sehingga untuk mendapatkan hasil diagnosis sesungguhnya diperlukan konsultasi dan pengujian lebih lanjut oleh dokter ataupun psikolog.
+                                Hasil dari test ini merupakan hasil test screening yang bertujuan untuk mendeteksi potensi adanya gangguan kecemasan yang mungkin dimiliki oleh seseorang, sehingga untuk mendapatkan hasil diagnosis sesungguhnya diperlukan konsultasi dan pengujian lebih lanjut oleh dokter ataupun psikolog.
                             </div>
                         </div>
                     </div>
