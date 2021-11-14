@@ -21,7 +21,7 @@ export default function Navbar() {
     }
 
     useEffect(() => {
-        if(isLarge){
+        if (isLarge) {
             setMenu(true);
         }
     }, [isLarge]);
@@ -46,8 +46,8 @@ export default function Navbar() {
             </div>
 
             {/* List of links */}
-            <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                {menu &&
+            {menu &&
+                <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                     <div className="text-xl font-semibold lg:flex-grow">
                         <NavLink to="/" className={"block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-600 hover:bg-gray-50 p-2 mr-5 rounded align-middle"}>
                             Home
@@ -59,16 +59,14 @@ export default function Navbar() {
                             Contributor
                         </NavLink >
                     </div>
-                }
-
-
-                {/* GitHub Project Link */}
-                <div>
-                    <a href="https://github.com/vinzmc/andect" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green-500 hover:bg-white mt-4 lg:mt-0">
-                        <img src={githubLogo} className="w-12 align-middle hover:shadow-inner p-2 rounded" alt="Project Link" />
-                    </a>
+                    {/* GitHub Project Link */}
+                    <div>
+                        <a href="https://github.com/vinzmc/andect" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green-500 hover:bg-white mt-4 lg:mt-0">
+                            <img src={githubLogo} className="w-12 align-middle hover:shadow-inner p-2 rounded" alt="Project Link" />
+                        </a>
+                    </div>
                 </div>
-            </div>
+            }
         </nav>
     )
 }
