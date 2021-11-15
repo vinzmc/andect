@@ -8,7 +8,7 @@ export const knowledge = {
     },
     {
       id: "G002",
-      pertanyaan: "Sebuah dorongan yang menuntun Anda untuk melakukan sesuatu yang memberikan rasa kelegaan sementara?",
+      pertanyaan: "Apakah kecemasan dan ketakutan yang Anda rasakan datang secara terus menerus dan timbul sebuah dorongan yang menuntun Anda untuk melakukan sesuatu yang memberikan rasa kelegaan sementara?",
       pilihan: ["Ya", "Tidak"],
     },
     {
