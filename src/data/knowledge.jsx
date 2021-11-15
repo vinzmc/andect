@@ -78,7 +78,7 @@ export const knowledge = {
     },
     {
       id: "G016",
-      pertanyaan: "seperti detak jantung berdetak dengan cepat, atau berkeringat, atau sesak nafas, atau nyeri dada, dan atau rasa takut mati?",
+      pertanyaan: "Apakah Anda mengalami gejala serangan panik seperti detak jantung berdetak dengan cepat, atau berkeringat, atau sesak nafas, atau nyeri dada, dan atau rasa takut mati?",
       pilihan: ["Ya", "Tidak"],
     },
     {
