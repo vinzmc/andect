@@ -59,18 +59,16 @@ export default function rulesResult(arr) {
                 //ubah menjadi agoraphobia dan panik
                 result[result.length - 1] = hasil[4];
             } else {
-                //agoraphobia
+                //agoraphobia tanpa panik
                 result.push(hasil[6]);
             }
         }
 
         if (result.length === 0) {
+            // kecemasan lain lain
             result.push(hasil[7]);
         }
-    }
-
-    if (result.length === 0) {
-        //agar output sama
+    }else{
         result.push('Tidak terdeteksi adanya gangguan kecemasan.');
     }
 
